@@ -1,14 +1,20 @@
 \section{Random Variables}
 \begin{math}
-  f(x) = P(X = x), F(x) = P(X \leq x)
+  pdf disc{:}\> f(x) = P(X = x), cdf{:}\> F(x) = P(X \leq x)
 \end{math}
 \begin{math}
-  \sum_{x \in \Omega}{f(x)} = 1
+  \tab\tab \sum_{x \in \Omega}{f(x)} = 1, \tab\tab \int f(x) = 1
+\end{math}
+\begin{math}
+  pdf cont{:}\> P(a \leq X \leq x) = \int_{a}^{b} f(x) dx
 \end{math}
 
 \subsection{Expectation}
 \begin{math}
   \expect{h(X)} = \sum_{all \, x} h(x) f(x)
+\end{math} \\[2pt]
+\begin{math}
+  \expect{X} = \int x \cdot f(x)
 \end{math} \\[2pt]
 \begin{math}
   \expect{a} = a, \expect{aX} = a\expect{X}
@@ -25,7 +31,7 @@
   Var(X) = \expect{X^2} - (\expect{X})^2
 \end{math} \\[2pt]
 \begin{math}
-  Var(a) = 0, Var(aX) = a^2 Var(X)
+  Var(a) = 0, \tab Var(aX) = a^2 Var(X)
 \end{math} \\[2pt]
 \begin{math}
   Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)
@@ -56,7 +62,7 @@
   Cov(X, Y) = \sigma_{XY} = \expect{(X - \expect{X}) \cdot (Y - \expect{Y})} = \expect{XY} - \expect{X} \cdot \expect{Y}
 \end{math} \\[2pt]
 \begin{math}
-  Cov(X, a) = 0, Cov(X, X) = Var(x)
+  Cov(X, a) = 0, \tab Cov(X, X) = Var(x)
 \end{math} \\[2pt]
 \begin{math}
   Cov(X, Y) = Cov(Y, X)
