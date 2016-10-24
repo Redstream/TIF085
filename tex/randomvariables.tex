@@ -1,18 +1,18 @@
 \section{Random Variables}
+pdf disc:
 \begin{math}
-  pdf disc{:}\> f(x) = P(X = x), cdf{:}\> F(x) = P(X \leq x)
-\end{math}
+  f(x) = P(X = x), \tab \sum_{x \in \Omega}{f(x)} = 1
+\end{math} \\
+pdf cont:
 \begin{math}
-  \tab\tab \sum_{x \in \Omega}{f(x)} = 1, \tab\tab \int f(x) = 1
-\end{math}
+  P(a \leq X \leq b) = \int_{a}^{b} f(x) dx
+\end{math} \\
+cdf regardless: 
 \begin{math}
-  pdf cont{:}\> P(a \leq X \leq x) = \int_{a}^{b} f(x) dx
+  F(x) = P(X \leq x), \tab \int f(x) = 1
 \end{math}
 
 \subsection{Expectation}
-\begin{math}
-  \expect{h(X)} = \sum_{all \, x} h(x) f(x)
-\end{math} \\[2pt]
 \begin{math}
   \expect{X} = \int x \cdot f(x)
 \end{math} \\[2pt]
@@ -21,6 +21,9 @@
 \end{math} \\[2pt]
 \begin{math}
   \expect{X + Y} = \expect{X} + \expect{Y}
+\end{math} \\[2pt]
+\begin{math}
+  \expect{h(X)} = \sum_{all \, x} h(x) f(x)
 \end{math} \\[2pt]
 
 \subsection{Variance}

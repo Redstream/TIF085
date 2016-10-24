@@ -55,6 +55,15 @@
                                 {\normalfont\small\bfseries}}
 \makeatother
 
+
+% Plus/minus
+\makeatletter
+\newcommand{\mypm}{\mathbin{\mathpalette\@mypm\relax}}
+\newcommand{\@mypm}[2]{\ooalign{%
+  \raisebox{.1\height}{$#1+$}\cr
+  \smash{\raisebox{-.6\height}{$#1-$}}\cr}}
+\makeatother
+
 \setcounter{secnumdepth}{0}
 
 \setlength{\parindent}{0pt}
@@ -77,10 +86,10 @@
 \input{tex/hypothesistesting.tex}
 \input{tex/generatingfunctions.tex}
 \input{tex/inequalities.tex}
-\input{tex/sequences.tex}
-
 \newpage
 
+
+\input{tex/sequences.tex}
 \input{tex/momentgeneratingfunctions.tex}
 \input{tex/inequalitites.tex}
 \input{tex/confidenceintervals.tex}

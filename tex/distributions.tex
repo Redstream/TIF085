@@ -25,6 +25,7 @@ Fixed number, \(n\), of Bernoulli trials, independent trials with equal probabil
 \begin{math}
   \expect{X} = np, Var(X) = np(1 - p)
 \end{math} \\[0pt]
+If n is large ($\geq$40), approximate with Standard Normal Distribution. 
 
 \subsection{Continuous Uniform Distribution}
 \begin{math}
@@ -50,6 +51,9 @@ Fixed number, \(n\), of Bernoulli trials, independent trials with equal probabil
 \subsection{Standard Normal Distribution}
 \begin{math}
   X \sim N(0, 1)
+\end{math} \\[0pt]
+\begin{math}
+  P(X \leq x) = P(\frac{X - \expect{X}}{\sqrt{Var(X)}} \leq \frac{x - \expect{X}}{\sqrt{Var(X)}}) = \phi{\frac{x - \expect{X}}{\sqrt{Var(X)}}}
 \end{math} \\[0pt]
 
 \subsection{Poisson Distribution}
