@@ -16,6 +16,10 @@
 \usepackage{mathtools}
 \usepackage{multicol}
 
+\usepackage[swedish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
 \newcommand{\expect}[1]{\mathrm{E} \left[ {#1} \right]}
 \newcommand{\cidist}[1]{{#1}_{\frac{\alpha}{2}}}
 \newcommand{\pisigma}[0]{\frac{1}{\sqrt{2 \pi \sigma^2}}}
@@ -27,8 +31,8 @@
   /Creator (latex)
   /Producer (pdflatex)
   /Author (Andreas Henriksson)
-  /Subject (Mathmatical Statistics)
-  /Keywords (math, statistics, cheat sheet)}
+  /Subject (Fysik för ingenjörer)
+  /Keywords (fysik, physics, cheat sheet)}
 
 \mathtoolsset{showonlyrefs}
 
@@ -36,8 +40,8 @@
 
 \fancyhf{}
 \pagestyle{fancy}
-\lhead{MatStat Cheat Sheet}
-\rhead{Original by Daniel Oom, github.com/daoo/matstat, forked by me :)}
+\lhead{TIF085 Cheat Sheet}
+\rhead{Gustaf Rödström \& Andreas Henriksson}
 \setlength{\headsep}{8pt}
 
 \makeatletter
@@ -75,30 +79,7 @@
 \begin{multicols}{4}
 \setlength{\columnseprule}{0.25pt}
 
-\input{tex/settheory.tex}
-\input{tex/discretemaths.tex}
-\input{tex/calculus.tex}
-\input{tex/probability.tex}
-\input{tex/randomvariables.tex}
-\input{tex/distributions.tex}
-\input{tex/estimation.tex}
-\input{tex/markovchains.tex}
-\input{tex/hypothesistesting.tex}
-\input{tex/generatingfunctions.tex}
-\input{tex/inequalities.tex}
-\newpage
-
-
-\input{tex/sequences.tex}
-\input{tex/momentgeneratingfunctions.tex}
-\input{tex/inequalitites.tex}
-\input{tex/confidenceintervals.tex}
-\input{tex/markovchains2.tex}
-\input{tex/expectation2.tex}
-\input{tex/variance.tex}
-\input{tex/other.tex}
-
-\newpage
+\input{tex/mekanik.tex}
 
 \end{multicols}
 \end{document}
